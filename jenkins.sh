@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                sh ''
+                sh '''
 		chmod +x ./ example.sh
 		./example.sh
-		''
+		'''
             }
         }
     }
