@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                echo 'Hello World'
+                sh './ example.sh'
             }
         }
     }
